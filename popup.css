@@ -1,0 +1,16 @@
+body {
+    width: 250px;
+    border: double;
+    border-color: #006c84;
+    padding: 10px;
+    margin: 5px;
+    background-color: #e2e8e4;
+}
+
+h2 {
+    color: #006c84;
+    margin-top: 0;
+}
+#idDescription{
+    margin-bottom: 5px;
+}

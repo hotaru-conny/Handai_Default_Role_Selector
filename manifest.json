@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Handai Default Role Selecter",
+    "version": "1.0",
+    "description": "阪大ITサービスログイン時のロールID選択にデフォルト値を追加します。",
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+        {
+            "matches": ["https://ou-idp.auth.osaka-u.ac.jp/idp/sso_redirect?*"],
+            "js": ["content_script.js"]
+        }   
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons":{
+        "16":"icon/icon16.png",
+        "32":"icon/icon32.png",
+        "48":"icon/icon48.png",
+        "128":"icon/icon128.png"
+
+    }
+}
