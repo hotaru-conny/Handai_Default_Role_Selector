@@ -6,7 +6,8 @@
     "permissions": ["activeTab", "storage"],
     "content_scripts": [
         {
-            "matches": ["https://ou-idp.auth.osaka-u.ac.jp/idp/sso_redirect?*"],
+            "matches": ["https://ou-idp.auth.osaka-u.ac.jp/idp/sso_redirect?*",
+                        "https://ou-idp.auth.osaka-u.ac.jp/idp/authnPwd"],
             "js": ["content_script.js"]
         }   
     ],
